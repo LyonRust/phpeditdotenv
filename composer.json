@@ -1,0 +1,21 @@
+{
+    "name": "agile/phpeditdotenv",
+    "description": "编辑'.env'文件",
+    "keywords": ["env", "dotenv", "editdotenv", "environment"],
+    "license" : "MIT",
+    "authors" : [
+        {
+            "name": "Andy",
+            "email": "php360@qq.com",
+            "homepage": "http://www.moqifei.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Agile\\Phpeditdotenv\\": "src/Phpeditdotenv"
+        }
+    }
+}
