@@ -88,6 +88,12 @@ class Dotenv
             $env .= PHP_EOL;
         }
 
-        return file_put_contents($filePath, $env);
+        if (file_put_contents($filePath, $env) === false) {
+            throw new \InvalidArgumentException(
+                'The file "' . $filePath . '" to save false'
+            );
+        }
+
+        return true;
     }
 }
