@@ -14,7 +14,7 @@ namespace Agile\Phpeditdotenv;
 class Dotenv
 {
     /**
-     * 读取env文件，保留空行和注释
+     * 读取env文件，保留以#开头的注释
      *
      * @param  string $path 文件路径
      * @param  string $file 文件名，默认".env"
@@ -43,8 +43,8 @@ class Dotenv
 
         $envData = [];
         foreach ($lines as $line) {
-            // 注释或者空行
-            if (strpos(trim($line), '#') === 0 || empty($line)) {
+            // 保留以#开头的注释
+            if (strpos(trim($line), '#') === 0) {
                 $envData[] = $line;
                 continue;
             }
