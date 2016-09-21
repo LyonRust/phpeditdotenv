@@ -59,7 +59,7 @@ class Dotenv
     }
 
     /**
-     * 保存数据到env文件中，同时保留空行和注释
+     * 保存数据到env文件中，同时保留注释
      *
      * @param  array  $envData 要保存的数据
      * @param  string $path 文件路径
