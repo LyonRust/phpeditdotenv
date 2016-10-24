@@ -37,7 +37,7 @@ class Dotenv
         // 开启auto_detect_line_endings
         ini_set('auto_detect_line_endings', '1');
         // 把env文件读取到数组中
-        $lines = file($filePath, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+        $lines = file($filePath, FILE_IGNORE_NEW_LINES);
         // 还原auto_detect_line_endings
         ini_set('auto_detect_line_endings', $autodetect);
 
