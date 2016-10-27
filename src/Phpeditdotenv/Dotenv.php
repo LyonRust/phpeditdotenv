@@ -19,7 +19,7 @@ class Dotenv
      * @param  string $path 文件路径
      * @param  string $file 文件名，默认".env"
      *
-     * @return void
+     * @return array
      */
     public static function load($path, $file = '.env')
     {
