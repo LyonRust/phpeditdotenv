@@ -7,7 +7,7 @@
 
     或者在composer.json文件中添加
     "require": {
-        "agile/domain": "~1.0"
+        "agile/phpeditdotenv": "~1.0"
     }
 
 ####使用
